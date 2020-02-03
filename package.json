@@ -1,0 +1,36 @@
+{
+  "name": "rd-anniversary",
+  "version": "1.0.0",
+  "description": "Responsible Data 5-year Anniversary Microsite",
+  "main": "index.html",
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "^1.0.4",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-less": "^2.0.0",
+    "grunt-contrib-uglify": "^4.0.1",
+    "grunt-contrib-watch": "^1.1.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/the-engine-room/rd-anniversary.git"
+  },
+  "keywords": [
+    "Responsible",
+    "data",
+    "microsite",
+    "the",
+    "engine",
+    "room"
+  ],
+  "author": "Alan Zard",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/the-engine-room/rd-anniversary/issues"
+  },
+  "homepage": "https://github.com/the-engine-room/rd-anniversary#readme"
+}
