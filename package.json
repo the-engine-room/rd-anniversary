@@ -10,7 +10,8 @@
     "grunt-contrib-copy": "^1.0.0",
     "grunt-contrib-less": "^2.0.0",
     "grunt-contrib-uglify": "^4.0.1",
-    "grunt-contrib-watch": "^1.1.0"
+    "grunt-contrib-watch": "^1.1.0",
+    "less-plugin-clean-css": "^1.5.1"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

@@ -1,0 +1,27 @@
+.montserrat  {
+  font-family: 'Montserrat', sans-serif;
+}
+.ptserif {
+  font-family: 'Pt Serif', serif;
+}
+
+.button(@bg: @red; @text: @white) {
+  display: inline-block;
+  padding: 5px 5px;
+  border-bottom: 2px solid @bg;
+  background: @text;
+  transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -webkit-transition:  all 0.3s ease 0s;
+  &:hover {
+    border-bottom: none;
+    background: @bg;
+    color: @text;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}

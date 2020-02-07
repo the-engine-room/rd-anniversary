@@ -1,0 +1,27 @@
+{
+  "name": "rda",
+  "description": "Responsibledata Anniversary",
+  "main": "index.html",
+  "authors": [
+    "the-engine-room"
+  ],
+  "license": "GPL 3.0",
+  "keywords": [
+    "responsibledata"
+  ],
+  "homepage": "https://github.com/the-engine-room/rd-anniversary",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "src/components/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.4.1"
+  },
+  "devDependencies": {
+    "malihu-custom-scrollbar-plugin": "^3.1.5"
+  }
+}

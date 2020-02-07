@@ -1,0 +1,132 @@
+footer#main-footer {
+  margin-top: 80px;
+  .red{
+    background: @red;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .dark {
+    background: @dark;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    &.border-top {
+      border-top: 1px solid #666;
+      padding-top: 35px;
+      padding-bottom: 35px;
+      .montserrat;
+      font-size: 0.8rem;
+      font-weight: 400;
+      #footer-nav {
+        .cols(7);
+        ul {
+          list-style: none;
+          padding: 0px;
+          li {
+            display: inline-block;
+            padding-right: 15px;
+            a {
+              color: @lite;
+              text-decoration:none;
+              &:hover {
+                text-decoration:underline;
+              }
+            }
+          }
+        }
+      }
+      #cc {
+        .cols(3);
+        padding: 12.8px 20px;
+        color: @lite;
+      }
+    }
+  }
+
+  .footer-title {
+    .cols(2);
+    h2 {
+      color: white;
+      margin: 0px;
+    }
+  }
+  .footer-content {
+    color: white;
+    .cols(8);
+    p {
+      margin-top: 0px;
+    }
+
+  }
+  .contributors {
+    list-style: none;
+    padding: 1rem 0rem;
+    li {
+      display: inline-block;
+      margin-right: 1rem;
+      &:last-child {
+        margin-right: 0rem;
+      }
+    }
+    & ~ a {
+      .montserrat;
+      text-decoration: none;
+      border-bottom: 1px solid @red;
+      color: white;
+      &:hover {
+        color: @red;
+      }
+    }
+  }
+}
+
+.mailing-list-form {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 30px;
+  margin-top: 30px;
+  min-height: 5.315rem;
+
+  ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+      color:    white;
+  }
+  :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+     color:    white;
+     opacity:  1;
+  }
+  ::-moz-placeholder { /* Mozilla Firefox 19+ */
+     color:    white;
+     opacity:  1;
+  }
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+     color:    white;
+  }
+  ::-ms-input-placeholder { /* Microsoft Edge */
+     color:    white;
+  }
+
+
+  :focus::-webkit-input-placeholder {opacity: 0; transition: opacity 0.3s ease;}
+  :focus::-moz-placeholder          {opacity: 0; transition: opacity 0.3s ease;}
+  :focus:-moz-placeholder           {opacity: 0; transition: opacity 0.3s ease;}
+  :focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s ease;}
+
+
+  input, button {
+    background: none;
+    border: none;
+    color: white;
+    .montserrat;
+  }
+  input {
+    width: 85%; float:left;
+  }
+  button{
+    width: 15%;
+    float: left;
+    text-decoration: underline;
+  }
+
+  textarea:focus, input:focus, button:focus{
+    outline: none;
+  }
+}

@@ -1,0 +1,44 @@
+#comments {
+  .cols(10);
+
+  h3 { margin-top: 35px;   }
+
+  label {
+    display: block; clear: both; .montserrat; text-transform: uppercase;
+    .required {
+      color: @red;
+    }
+  }
+
+  textarea {
+    width: 100%;
+    padding: 15px;
+    .ptserif;
+    border: 1px solid @border;
+    border-bottom-width: 3px;
+  }
+  input[type="text"], input[type="email"]{
+    padding: 15px;
+    .ptserif;
+    border: 1px solid @border;
+    border-bottom-width: 3px;
+  }
+  input.submit, input[type="button"] {
+    background: @red;
+    color: white;
+    .montserrat;
+    border: none;
+    width: 100%;
+    text-align: center;
+    padding: 15px 0px;
+    font-size: 0.9rem;
+  }
+  .comment-list { list-style: none; }
+  .comment-author.vcard {
+    img { margin-bottom: 0px; }
+    cite.fn { font-style: normal; font-weight: 900;}
+  }
+
+  .comment-meta.commentmetadata a { font-size: 14px; }
+
+}

@@ -1,0 +1,211 @@
+/** Import partials **/
+@import "utils/variables";
+@import "utils/mixins";
+@import "utils/grid";
+
+@import "utils/typography";
+
+@import "partials/base-wp";
+
+@import "partials/navigation";
+@import "partials/body";
+@import "partials/single";
+@import "partials/author";
+@import "partials/comments";
+@import "partials/forms";
+@import "partials/footer";
+
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+body {
+  box-sizing: border-box;
+  .ptserif;
+  color: @dark;
+  line-height: 1.75rem;
+  font-size: 1.25rem;
+  margin: 0px auto;
+
+  a, button {
+    outline:none;
+  }
+}
+
+#main {
+  .row;
+}
+header {
+  background: @red;
+}
+.hero .row {
+
+  .copy.homepage {
+    .cols(5);
+    h1 {
+      font-size: 66px;
+      line-height: 120%;
+      & ~ .rda-tagline {
+        font-style: italic;
+      }
+    }
+
+  }
+   .image{
+     .cols(5);
+     img { float: right;}
+   }
+}
+
+#stories {
+  h2 {
+    .montserrat;
+    font-size: 48px;
+    text-align: center;
+    font-weight: 700;
+  }
+  .image-row {
+    display: flex;
+    clear: both;
+    margin: 0px;
+    padding: 0px;
+    &:first-child {
+
+    }
+  }
+  .s {
+    width: 25%;
+    margin: 0px;
+    float: left;
+    clear: none;
+    background: @red;
+    color: white;
+    .montserrat;
+    position: relative;
+    font-size: 36px;
+    font-weight: bold;
+    vertical-align: middle;
+    display: flex;
+
+    img {
+      width: 100%;
+      display: block;
+    }
+    .avatar-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: fade(@red, 60%);
+      mix-blend-mode: multiply;
+    }
+
+  }
+  .d {
+    width: 50%;
+    margin: 0px;
+    float: left;
+    clear: none;
+    background: @red;
+    color: white;
+    .montserrat;
+    font-size: 36px;
+    font-weight: bold;
+    vertical-align: middle;
+    position: relative;
+    display: flex;
+  }
+  .label-text {
+    margin: auto 45px;
+    display: block;
+    line-height: 120%;
+  }
+}
+#timeline {
+  h2 {
+    .montserrat;
+    font-size: 48px;
+    text-align: center;
+    font-weight: 700;
+  }
+}
+
+.popcontent {
+  &.hide {
+    display: none;
+  }
+  position: absolute;
+  width: 105%;
+  max-height: 650px;
+  right: 0;
+  border: 5px solid @red;
+  background: white;
+  z-index: 99999;
+  display: flex;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);  
+  .left {
+    width: 30%;
+    background: @red;
+    float: left;
+    text-align: center;
+    padding: 20px 20px 50px;
+    color: white;
+    img {
+      margin: 0px auto 20px;
+      height: auto;
+      width: 100%;
+    }
+    h3 {
+      color: white;
+    }
+    .job-def {
+      display: block;
+      text-align: left;
+      margin: 25px 0px 25px;
+    }
+    .quote {
+      display: block;
+      .montserrat;
+      font-style: italic;
+      text-align: left;
+      margin: 25px 0px 25px;
+    }
+  }
+  .right {
+    width: 70%;
+    background: white;
+    float: right;
+    display: block;
+    overflow: hidden;
+    .close {
+      margin-top: 10px;
+      padding-right: 40px;
+      text-align: right;
+      .montserrat;
+      font-size: 10px;
+      font-weight: bold;
+      display: block;
+      clear: both;
+      float: left;
+      width: 100%;
+      height: 12px;
+    }
+    .popcontent-text {
+      padding: 40px 90px 20px 80px;
+      display: block;
+      clear: both;
+      float: left;
+      width: 100%;
+      height: 585px;
+    }
+  }
+
+}
+@import "partials/mobile";

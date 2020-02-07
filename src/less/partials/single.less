@@ -1,0 +1,211 @@
+.body-copy {
+  padding-bottom: 50px;
+}
+.rdf-single-meta-box {
+  padding: 8px 12px;
+}
+.single-post {
+  .title {
+    .cols(10);
+    h1 {
+      color: white;
+      margin: 60px auto 50px;
+    }
+  }
+  .content {
+    .cols(8);
+    margin-top: 40px;
+
+
+    .socials {
+      display: inline-block;
+      float: right;
+      margin: 0.3rem 0rem 0.9rem;
+      a { color: white !important; }
+      .social {
+        display: inline-block;
+        font-size: 1rem;
+        line-height: 2rem;
+        width: 2rem;
+        height: 2rem;
+        text-align: center;
+        border-radius: 1rem;
+        background: @lite;
+        &.fb {
+          color: white;
+          background: @facebook;
+        }
+        &.twitter {
+          color: white;
+          background: @twitter;
+        }
+      }
+    }
+    .image {
+      margin-top: 15px;
+      display: block;
+      clear: both;
+      width: 100%;
+    }
+  }
+
+  .sidebar{
+    .cols(2);
+    margin-top: 40px;
+    .tags {
+      .montserrat;
+      font-weight: 700;
+      font-size: 1rem;
+      a {
+        text-decoration: none;
+        border-bottom: 1px solid @red;
+        color: @dark;
+        &:hover {
+          color: @red;
+        }
+      }
+    }
+  }
+}
+
+.author-excerpt {
+  background: @pale;
+  padding-top: 3.75rem;
+  padding-bottom: 3.75rem;
+  .author-avatar {
+    .cols(2);
+  }
+  .author-copy {
+    .cols(8);
+  }
+  .event-copy {
+    .cols(10);
+  }
+}
+
+.related-post-list {
+  .cols(10);
+  padding-top: 0px;
+  padding-bottom: 50px;
+  h2 {
+    margin-top: 30px;
+  }
+  .related-post {
+    padding: 40px;
+    border: 1px solid @border;
+    &:not(:first-child){
+      border-top: 0px; 
+    }
+    .related-post-thumbnail {
+      float: left;
+      margin-right: 40px;
+      max-width: 263px;
+    }
+    .related-post-content {
+      float: left;
+      max-width: ~"calc(100% - 303px)";
+      .related-post-link {
+        color: @dark;
+        text-decoration: none;
+      }
+    }
+  }
+}
+.related-post-link {
+  color: @dark;
+  text-decoration: none;
+}
+.categories-dates {
+  display: inline-block;
+  &.category-icon {
+    padding-left: 36px;
+    &.category-icon-bookmark-white {
+      background: url('../assets/icons/bookmark-white.jpg') no-repeat center left;
+    }
+    &.category-icon-bubble-white {
+      background: url('../assets/icons/bubble-white.jpg') no-repeat center left;
+    }
+    &.category-icon-bulb-white {
+      background: url('../assets/icons/bulb-white.jpg') no-repeat center left;
+    }
+    &.category-icon-calendar-white {
+      background: url('../assets/icons/calendar-white.jpg') no-repeat center left;
+    }
+    &.category-icon-checklist-white {
+      background: url('../assets/icons/checklist-white.jpg') no-repeat center left;
+    }
+    &.category-icon-clipboard-white {
+      background: url('../assets/icons/clipboard-white.jpg') no-repeat center left;
+    }
+    &.category-icon-compass-white {
+      background: url('../assets/icons/compass-white.jpg') no-repeat center left;
+    }
+    &.category-icon-magnify-white {
+      background: url('../assets/icons/magnify-white.jpg') no-repeat center left;
+    }
+
+
+    &.category-icon-bookmark-red {
+      background: url('../assets/icons/bookmark-red.jpg') no-repeat center left;
+    }
+    &.category-icon-bubble-red {
+      background: url('../assets/icons/bubble-red.jpg') no-repeat center left;
+    }
+    &.category-icon-bulb-red {
+      background: url('../assets/icons/bulb-red.jpg') no-repeat center left;
+    }
+    &.category-icon-calendar-red {
+      background: url('../assets/icons/calendar-red.jpg') no-repeat center left;
+    }
+    &.category-icon-checklist-red {
+      background: url('../assets/icons/checklist-red.jpg') no-repeat center left;
+    }
+    &.category-icon-clipboard-red {
+      background: url('../assets/icons/clipboard-red.jpg') no-repeat center left;
+    }
+    &.category-icon-compass-red {
+      background: url('../assets/icons/compass-red.jpg') no-repeat center left;
+    }
+    &.category-icon-magnify-red {
+      background: url('../assets/icons/magnify-red.jpg') no-repeat center left;
+    }
+
+    &.category-events       { background: url('../assets/icons/event.png') no-repeat center left; }
+    &.category-analysis     { background: url('../assets/icons/analysis.png') no-repeat center left; }
+    &.category-exercises    { background: url('../assets/icons/exercises.png') no-repeat center left; }
+    &.category-experiences  { background: url('../assets/icons/experiences.png') no-repeat center left; }
+    &.category-guides       { background: url('../assets/icons/guides.png') no-repeat center left; }
+    &.category-tools        { background: url('../assets/icons/tools.png') no-repeat center left; }
+
+  }
+  .date, .split {
+    .caption;
+    color: @lite;
+  }
+  .split {
+    padding: 0px 5px;
+  }
+}
+
+.image {
+  figure {
+    margin: 0px;
+    position: relative;
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+    figcaption {
+      .caption;
+      position: absolute;
+      bottom: 0px;
+      left: 0px;
+      background: white;
+      padding: 3px 25px 3px 10px;
+    }
+  }
+}
+
+.venue {
+  padding: 25px 0px 35px;
+}
